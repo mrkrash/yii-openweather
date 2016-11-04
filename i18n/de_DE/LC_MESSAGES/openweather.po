@@ -1,0 +1,284 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: openweather\n"
+"POT-Creation-Date: 2016-11-04 11:27+0100\n"
+"PO-Revision-Date: 2016-11-04 11:36+0100\n"
+"Last-Translator: Mario <mario@raval.li>\n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.9\n"
+"X-Poedit-Basepath: ../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: OpenWeather.php\n"
+"X-Poedit-SearchPath-1: views\n"
+
+#: OpenWeather.php:148
+msgid "thunderstorm with light rain"
+msgstr "Gewitter mit leichtem Regen"
+
+#: OpenWeather.php:150
+msgid "thunderstorm with rain"
+msgstr "Gewitter mit Regen"
+
+#: OpenWeather.php:152
+msgid "thunderstorm with heavy rain"
+msgstr "Gewitter mit starkem Regen"
+
+#: OpenWeather.php:154
+msgid "light thunderstorm"
+msgstr "leichte Gewitter"
+
+#: OpenWeather.php:156
+msgid "thunderstorm"
+msgstr "Gewitter"
+
+#: OpenWeather.php:158
+msgid "heavy thunderstorm"
+msgstr "schwere Gewitter"
+
+#: OpenWeather.php:160
+msgid "ragged thunderstorm"
+msgstr "einige Gewitter"
+
+#: OpenWeather.php:162
+msgid "thunderstorm with light drizzle"
+msgstr "Gewitter mit leichtem Nieselregen"
+
+#: OpenWeather.php:164
+msgid "thunderstorm with drizzle"
+msgstr "Gewitter mit Nieselregen"
+
+#: OpenWeather.php:166
+msgid "thunderstorm with heavy drizzle"
+msgstr "Gewitter mit starkem Nieselregen"
+
+#: OpenWeather.php:168
+msgid "light intensity drizzle"
+msgstr "leichtes Nieseln"
+
+#: OpenWeather.php:170
+msgid "drizzle"
+msgstr "Nieseln"
+
+#: OpenWeather.php:172
+msgid "heavy intensity drizzle"
+msgstr "starkes Nieseln"
+
+#: OpenWeather.php:174
+msgid "light intensity drizzle rain"
+msgstr "leichter Nieselregen"
+
+#: OpenWeather.php:176
+msgid "drizzle rain"
+msgstr "Nieselregen"
+
+#: OpenWeather.php:178
+msgid "heavy intensity drizzle rain"
+msgstr "starker Nieselregen"
+
+#: OpenWeather.php:180
+msgid "shower rain and drizzle"
+msgstr "Regenschauer und Nieseln"
+
+#: OpenWeather.php:182
+msgid "heavy shower rain and drizzle"
+msgstr "starke Regenschauer und Nieseln"
+
+#: OpenWeather.php:184
+msgid "shower drizzle"
+msgstr "Nieselschauer"
+
+#: OpenWeather.php:186
+msgid "light rain"
+msgstr "leichter Regen"
+
+#: OpenWeather.php:188
+msgid "moderate rain"
+msgstr "mäßiger Regen"
+
+#: OpenWeather.php:190
+msgid "heavy intensity rain"
+msgstr "sehr starker Regen"
+
+#: OpenWeather.php:192
+msgid "very heavy rain"
+msgstr "sehr starker Regen"
+
+#: OpenWeather.php:194
+msgid "extreme rain"
+msgstr "Starkregen"
+
+#: OpenWeather.php:196
+msgid "freezing rain"
+msgstr "Eisregen"
+
+#: OpenWeather.php:198
+msgid "light intensity shower rain"
+msgstr "leichte Regenschauer"
+
+#: OpenWeather.php:200
+msgid "shower rain"
+msgstr "Regenschauer"
+
+#: OpenWeather.php:202
+msgid "heavy intensity shower rain"
+msgstr "heftige Regenschauer"
+
+#: OpenWeather.php:204
+msgid "ragged shower rain"
+msgstr "einige Regenschauer"
+
+#: OpenWeather.php:206
+msgid "light snow"
+msgstr "mäßiger Schnee"
+
+#: OpenWeather.php:208
+msgid "snow"
+msgstr "Schnee"
+
+#: OpenWeather.php:210
+msgid "heavy snow"
+msgstr "heftiger Schneefall"
+
+#: OpenWeather.php:212
+msgid "sleet"
+msgstr "Graupel"
+
+#: OpenWeather.php:214
+msgid "shower sleet"
+msgstr "Graupelschauer"
+
+#: OpenWeather.php:216
+msgid "light rain and snow"
+msgstr "leichter Regen und Schnee"
+
+#: OpenWeather.php:218
+msgid "rain and snow"
+msgstr "Regen und Schnee"
+
+#: OpenWeather.php:220
+msgid "light shower snow"
+msgstr "leichter Schneeschauer"
+
+#: OpenWeather.php:222
+msgid "shower snow"
+msgstr "Schneeschauer"
+
+#: OpenWeather.php:224
+msgid "heavy shower snow"
+msgstr "heftiger Schneeschauer"
+
+#: OpenWeather.php:226
+msgid "mist"
+msgstr "trüb"
+
+#: OpenWeather.php:228
+msgid "smoke"
+msgstr "Rauch"
+
+#: OpenWeather.php:230
+msgid "haze"
+msgstr "Dunst"
+
+#: OpenWeather.php:232
+msgid "Sand/Dust Whirls"
+msgstr "Sand / Staubsturm"
+
+#: OpenWeather.php:234
+msgid "Fog"
+msgstr "Nebel"
+
+#: OpenWeather.php:236
+msgid "sand"
+msgstr "Sand"
+
+#: OpenWeather.php:238
+msgid "dust"
+msgstr "Staub"
+
+#: OpenWeather.php:240
+msgid "VOLCANIC ASH"
+msgstr "Vulkanasche"
+
+#: OpenWeather.php:242
+msgid "SQUALLS"
+msgstr "Sturmböen"
+
+#: OpenWeather.php:244
+msgid "TORNADO"
+msgstr "Tornado"
+
+#: OpenWeather.php:246
+msgid "sky is clear"
+msgstr "klarer Himmel"
+
+#: OpenWeather.php:248
+msgid "few clouds"
+msgstr "ein paar Wolken"
+
+#: OpenWeather.php:250
+msgid "scattered clouds"
+msgstr "überwiegend bewölkt"
+
+#: OpenWeather.php:252
+msgid "broken clouds"
+msgstr "überwiegend bewölkt"
+
+#: OpenWeather.php:254
+msgid "overcast clouds"
+msgstr "wolkenbedeckt"
+
+#: OpenWeather.php:256
+msgid "Not available"
+msgstr "Nicht verfügbar"
+
+#: OpenWeather.php:264
+msgid "N"
+msgstr "N"
+
+#: OpenWeather.php:264
+msgid "NE"
+msgstr "NE"
+
+#: OpenWeather.php:264
+msgid "E"
+msgstr "E"
+
+#: OpenWeather.php:264
+msgid "SE"
+msgstr "SE"
+
+#: OpenWeather.php:264
+msgid "S"
+msgstr "S"
+
+#: OpenWeather.php:264
+msgid "SW"
+msgstr "SW"
+
+#: OpenWeather.php:264
+msgid "W"
+msgstr "W"
+
+#: OpenWeather.php:264
+msgid "NW"
+msgstr "NW"
+
+#: views/weather1.php:7
+msgid "Temperature"
+msgstr "Temperatur"
+
+#: views/weather1.php:8
+msgid "Pressure"
+msgstr "Druck"
+
+#: views/weather1.php:9
+msgid "Humidity"
+msgstr "Feuchtigkeit"
+
+#: views/weather1.php:10
+msgid "Wind"
+msgstr "Wind"
