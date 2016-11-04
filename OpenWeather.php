@@ -23,7 +23,7 @@
 class OpenWeather extends \CWidget
 {
     public $apiURL = 'http://api.openweathermap.org/data/2.5/weather?q=';
-    public $apiKey = '198f13f0e3e5a1dbd517a209d802054b';
+    public $apiKey = '';
     public $apiQ = 'Ragusa,it';
     public $data;
     public $cssFile = 'openweather.css';
@@ -45,6 +45,9 @@ class OpenWeather extends \CWidget
     public function init()
     {
         parent::init();
+        if (empty($this->apiKey)) {
+            throw new CException(Yii::t('You need to insert a valid API Key for works'));
+        }
         $this->getAssetsUrl();
         Yii::app()->getClientScript()->registerCssFile($this->_assetsUrl . '/css/' . $this->cssFile);
         //Yii::app()->getClientScript()->registerScriptFile($this->_assetsUrl . '/js/' . $this->jsFile);
@@ -60,6 +63,9 @@ class OpenWeather extends \CWidget
             curl_setopt($curl, CURLOPT_URL, $this->apiURL . $this->apiQ . '&appid=' . $this->apiKey);
             curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
             $data = curl_exec($curl);
+            if (curl_getinfo($curl, CURLINFO_HTTP_CODE) === 401) {
+                throw new CException(Yii::t('Access to OpenWeather denied. You need a valid API Key for works'));
+            }
             file_put_contents(Yii::getPathOfAlias('application.runtime.OpenWeather') . 'openweather.json', $data);
         } else {
             $data = file_get_contents(Yii::getPathOfAlias('application.runtime.OpenWeather') . 'openweather.json');
