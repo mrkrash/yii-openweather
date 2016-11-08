@@ -24,7 +24,7 @@ class OpenWeather extends \CWidget
 {
     public $apiURL = 'http://api.openweathermap.org/data/2.5/weather?q=';
     public $apiKey = '';
-    public $apiQ = 'Ragusa,it';
+    public $apiQ = '';
     public $data;
     public $cssFile = 'openweather.css';
     public $jsFile = 'openweather.js';
@@ -45,8 +45,8 @@ class OpenWeather extends \CWidget
     public function init()
     {
         parent::init();
-        if (empty($this->apiKey)) {
-            throw new CException(Yii::t('You need to insert a valid API Key for works'));
+        if (empty($this->apiKey) || empty($this->apiQ)) {
+            throw new CException(Yii::t('You need to insert a valid API Key and a location for works'));
         }
         $this->getAssetsUrl();
         Yii::app()->getClientScript()->registerCssFile($this->_assetsUrl . '/css/' . $this->cssFile);
@@ -58,7 +58,7 @@ class OpenWeather extends \CWidget
         bindtextdomain("openweather", Yii::getPathOfAlias('ext.OpenWeather.i18n'));
         textdomain("openweather");
         $date = new DateTime();
-        if (!is_file(Yii::getPathOfAlias('application.runtime.OpenWeather') . 'openweather.json') || (time() - filemtime(Yii::getPathOfAlias('application.runtime.OpenWeather') . 'openweather.json')) > 3600) {
+        if (!is_file(Yii::getPathOfAlias('application.runtime.OpenWeather') . '/openweather.json') || (time() - filemtime(Yii::getPathOfAlias('application.runtime.OpenWeather') . 'openweather.json')) > 3600) {
             $curl = curl_init();
             curl_setopt($curl, CURLOPT_URL, $this->apiURL . $this->apiQ . '&appid=' . $this->apiKey);
             curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
@@ -66,9 +66,9 @@ class OpenWeather extends \CWidget
             if (curl_getinfo($curl, CURLINFO_HTTP_CODE) === 401) {
                 throw new CException(Yii::t('Access to OpenWeather denied. You need a valid API Key for works'));
             }
-            file_put_contents(Yii::getPathOfAlias('application.runtime.OpenWeather') . 'openweather.json', $data);
+            file_put_contents(Yii::getPathOfAlias('application.runtime.OpenWeather') . '/openweather.json', $data);
         } else {
-            $data = file_get_contents(Yii::getPathOfAlias('application.runtime.OpenWeather') . 'openweather.json');
+            $data = file_get_contents(Yii::getPathOfAlias('application.runtime.OpenWeather') . '/openweather.json');
         }
         $this->data = json_decode($data);
     }
